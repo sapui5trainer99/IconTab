@@ -1,0 +1,36 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<f:SimpleForm   class="editableForm" columnsL="2" columnsM="2" editable="true"
+		emptySpanL="1" emptySpanM="1" labelSpanL="4" labelSpanM="4" layout="ResponsiveGridLayout" maxContainerCols="2">
+		<f:content>
+			<core:Title/>
+		<Label text="Qualification" design="Bold"></Label>
+		<ComboBox selectedKey="" id="qua">
+						<core:Item text="BE/B-Tech" key="BE"></core:Item>
+						<core:Item text="BCA" key="BCA"></core:Item>
+						<core:Item text="MCA" key="MCA"></core:Item>
+						<core:Item text="Bsc-IT" key="Bsc"></core:Item>
+		</ComboBox>
+		<Label text="Specialization" design="Bold"></Label>
+		<ComboBox selectedKey="" id="sp">
+						<core:Item text="IT" key="IT"></core:Item>
+						<core:Item text="Comp Sci" key="CS"></core:Item>
+					
+		</ComboBox>
+		<Label text="Year of Passing" design="Bold"></Label>
+		<Input value="" id="passyr"></Input>
+		<core:Title/>
+		<Label text="Type of Education" design="Bold"></Label>
+		<ComboBox selectedKey="" id="edutyp">
+						<core:Item text="Full Time" key="FT"></core:Item>
+						<core:Item text="Part Time" key="PT"></core:Item>
+					
+		</ComboBox>
+		<Label text="Collage/Institute Name" design="Bold"></Label>
+		<Input value="" id="clg"></Input>
+		<Label text="University Name" design="Bold"></Label>
+		<Input value="" id="uni"></Input>
+		</f:content>
+	</f:SimpleForm>
+	
+	
+</core:FragmentDefinition>

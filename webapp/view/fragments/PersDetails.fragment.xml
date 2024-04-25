@@ -1,0 +1,39 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<f:SimpleForm   class="editableForm" columnsL="2" columnsM="2" editable="true"
+		emptySpanL="1" emptySpanM="1" labelSpanL="4" labelSpanM="4" layout="ResponsiveGridLayout" maxContainerCols="2">
+		<f:content>
+		<core:Title/>
+		<Label text="Employee Name" design="Bold"></Label>
+		<Input value="" placeholder="First Name" id="fname"></Input>
+		<Input value="" placeholder="Last Name" id="lname"></Input>
+	<!--	<Label text="Nationality" design="Bold"></Label>
+		<ComboBox selectedKey="" id="Cmbo">
+						<core:Item text="India" key="Ind"></core:Item>
+						<core:Item text="USA" key="USA"></core:Item>
+						<core:Item text="Austrelia" key="Aus"></core:Item>
+						<core:Item text="Germany" key="Ger"></core:Item>
+						
+					</ComboBox>-->
+		<Label text="Gender" design="Bold"></Label>
+		<RadioButtonGroup columns="2" id="Rb" selectedIndex="-1"  > 
+						<RadioButton text="Male"></RadioButton>
+						<RadioButton text="Female"></RadioButton>
+		</RadioButtonGroup>
+		<Label text="Date of Birth" design="Bold"></Label>
+		<DatePicker placeholder="Select Date" displayFormat="dd/MM/yyyy" id="dob"></DatePicker>
+			<core:Title/>
+		<Label text="Marital Status" design="Bold"></Label>
+		<ComboBox selectedKey="" id="MarSt">
+						<core:Item text="Married" key="M"></core:Item>
+						<core:Item text="UnMarried" key="F"></core:Item>
+		</ComboBox>
+		<Label text="Email Id" design="Bold"></Label>
+		<Input value="" placeholder="" id="mail"></Input>
+		<Label text="Mobile Number" design="Bold"></Label>
+		<Input value="" placeholder="" id="mob"></Input>
+			 
+		</f:content>
+	</f:SimpleForm>
+	
+	
+</core:FragmentDefinition>

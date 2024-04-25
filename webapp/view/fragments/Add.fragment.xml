@@ -1,0 +1,26 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<f:SimpleForm   class="editableForm" columnsL="2" columnsM="2" editable="true"
+		emptySpanL="1" emptySpanM="1" labelSpanL="4" labelSpanM="4" layout="ResponsiveGridLayout" maxContainerCols="2">
+		<f:content>
+		<Label text="House No/Building" design="Bold"></Label>
+		<Input value="" id="house"></Input>
+		<Label text="Street/Road" design="Bold"></Label>
+		<Input value="" id="street"></Input>
+		<Label text="LandMark" design="Bold"></Label>
+		<Input value="" id="land"></Input>
+		<Label text="Locality" design="Bold"></Label>
+		<Input value="" id="locality"></Input>
+		<core:Title></core:Title>
+		<Label text="City" design="Bold"></Label>
+		<Input value="" id="city"></Input>
+		<Label text="District" design="Bold"></Label>
+		<Input value="" id="dist"></Input>
+		<Label text="Pin Code" design="Bold"></Label>
+		<Input value="" id="pin"></Input>
+		<Label text="State" design="Bold"></Label>
+		<Input value="" id="state"></Input>
+		</f:content>
+	</f:SimpleForm>
+	
+	
+</core:FragmentDefinition>

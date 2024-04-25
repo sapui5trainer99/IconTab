@@ -1,0 +1,47 @@
+<mvc:View controllerName="icontab.controller.IconTab"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+    <App>
+		<pages>
+			<Page title="Employee Details" class="sapUiSizeCompact">
+				<content>
+					<ProgressIndicator
+					id="progInd"
+				class="sapUiSmallMarginBottom"
+				percentValue="0"
+				displayValue="0%"
+				showValue="true"
+				state="Success" />
+					<IconTabBar id="iconTabId" selectedKey="PD">
+						<items>
+						<IconTabFilter key="PD" text="Personal Detail" id="PD"   icon="sap-icon://employee" iconColor="Critical">
+						<core:Fragment fragmentName="icontab.view.fragments.PersDetails" type="XML"/>
+							
+						</IconTabFilter>
+						<IconTabSeparator icon="sap-icon://process"></IconTabSeparator>
+						<IconTabFilter key="Edu" id="Edu" text="Education" icon="sap-icon://official-service" enabled="false">
+							<core:Fragment fragmentName="icontab.view.fragments.Edu" type="XML"/>
+							
+						</IconTabFilter>
+						<IconTabSeparator icon="sap-icon://process"></IconTabSeparator>
+						<IconTabFilter key="WE" id="WE" text="Work Experience"  icon="sap-icon://suitcase" enabled="false"> 
+						<core:Fragment fragmentName="icontab.view.fragments.WExp" type="XML"/>
+						</IconTabFilter>
+						<IconTabSeparator icon="sap-icon://process"></IconTabSeparator>
+						<IconTabFilter key="Add" id="Add" text="Address"  icon="sap-icon://home" enabled="false">
+							<core:Fragment fragmentName="icontab.view.fragments.Add" type="XML"/>
+						</IconTabFilter>
+						</items>
+					</IconTabBar>
+				</content>
+				<footer>
+					<OverflowToolbar>
+						<ToolbarSpacer/>
+						<Button text="Next" press="onNext" id="nextbtn" type="Emphasized" ></Button>
+					</OverflowToolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+
+</mvc:View>
